@@ -1,266 +1,787 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>دستور الأمريكي — سنة 1899</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>, وزاره العدل 1899 - Kingdom of Justice 1899</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <!-- خط عربي لجعل العرض أجمل -->
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 50%, #fecaca 100%);
+            color: #333;
+            line-height: 1.6;
+        }
 
-  <style>
-    :root{
-      --beige: #F5F0E6;
-      --accent: #B22222; /* أحمر داكن جميل */
-      --text: #333;
-      --muted: #6b6b6b;
-      --card: #fffaf6;
-      --container-max: 900px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background: linear-gradient(180deg, var(--beige) 0%, #EFE7DB 100%);
-      color:var(--text);
-      font-family: 'Tajawal', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      line-height:1.6;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      padding:24px;
-    }
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #92400e 0%, #b45309 50%, #dc2626 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid #b45309;
+        }
 
-    .wrap{
-      max-width:var(--container-max);
-      margin: 18px auto;
-      background: linear-gradient(180deg, var(--card), #fff);
-      border-radius:12px;
-      box-shadow: 0 6px 28px rgba(0,0,0,0.08);
-      overflow:hidden;
-      border: 4px solid rgba(178,34,34,0.06);
-    }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
 
-    header{
-      background: repeating-linear-gradient(90deg, rgba(178,34,34,0.06) 0 30px, transparent 30px 60px), linear-gradient(0deg, rgba(178,34,34,0.03), rgba(178,34,34,0.01));
-      padding:28px 36px;
-      border-bottom: 3px solid rgba(178,34,34,0.08);
-    }
-    header h1{
-      margin:0;
-      font-size:28px;
-      color:var(--accent);
-      letter-spacing:0.6px;
-    }
-    header p.lead{
-      margin:6px 0 0;
-      color:var(--muted);
-      font-size:14px;
-    }
+        header .subtitle {
+            font-size: 1.5rem;
+            color: #fef3c7;
+            margin-bottom: 1rem;
+        }
 
-    main{
-      padding:28px 36px;
-    }
+        header .tagline {
+            font-size: 1rem;
+            color: #fcd34d;
+        }
 
-    .meta{
-      display:flex;
-      gap:18px;
-      flex-wrap:wrap;
-      margin-bottom:18px;
-      align-items:center;
-    }
-    .meta .badge{
-      background:var(--accent);
-      color:#fff;
-      padding:8px 12px;
-      border-radius:8px;
-      font-weight:700;
-      font-size:13px;
-    }
-    .meta .info{
-      color:var(--muted);
-      font-size:13px;
-    }
+        /* Navigation */
+        nav {
+            background-color: #b45309;
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-    article.section{
-      margin-bottom:18px;
-      padding:18px;
-      border-radius:10px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
-      border:1px solid rgba(0,0,0,0.03);
-    }
-    article.section h2{
-      margin:0 0 8px 0;
-      font-size:18px;
-      color:var(--accent);
-    }
-    article.section p{ margin:0 0 10px 0; font-size:15px; color: #2f2f2f; }
+        nav .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
 
-    .two-col{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:16px;
-      margin-top:12px;
-    }
+        nav button {
+            background: transparent;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+        }
 
-    dl{ margin:0; }
-    dt{ font-weight:700; color:var(--accent); margin-bottom:6px; }
-    dd{ margin:0 0 12px 0; color:var(--muted); }
+        nav button:hover {
+            background-color: #92400e;
+        }
 
-    footer{
-      padding:20px 36px;
-      border-top:3px solid rgba(178,34,34,0.04);
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:12px;
-    }
-    footer .small{ color:var(--muted); font-size:13px; }
-    footer .sig{ color:var(--accent); font-weight:700; font-size:14px; }
+        /* Main Container */
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
 
-    /* طباعة */
-    @media print{
-      body{ padding:0; background: #fff; }
-      .wrap{ box-shadow:none; border: none; }
-      header, footer { display:none; }
-    }
+        /* Tabs */
+        .tabs {
+            margin-bottom: 2rem;
+        }
 
-    /* استجابة */
-    @media (max-width:720px){
-      .two-col{ grid-template-columns: 1fr; }
-      header h1{ font-size:22px }
-      main{ padding:18px }
-      header{ padding:18px }
-      footer{ padding:14px 18px; flex-direction:column; align-items:flex-start; gap:6px; }
-    }
+        .tab-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            background-color: #fcd34d;
+            padding: 1rem;
+            border-radius: 8px;
+        }
 
-    /* زر صغير لنسخ */
-    .actions{ display:flex; gap:8px; margin-bottom:12px; }
-    .btn{
-      background:var(--accent);
-      color:#fff;
-      padding:8px 12px;
-      border-radius:8px;
-      cursor:pointer;
-      border:none;
-      font-weight:700;
-      font-size:13px;
-    }
-    .btn.ghost{
-      background:transparent;
-      color:var(--accent);
-      border:2px solid rgba(178,34,34,0.12);
-    }
+        .tab-button {
+            padding: 0.75rem 1rem;
+            background-color: white;
+            border: 2px solid #b45309;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #92400e;
+            transition: all 0.3s;
+        }
 
-  </style>
+        .tab-button.active {
+            background-color: #b45309;
+            color: white;
+        }
+
+        .tab-button:hover {
+            background-color: #fed7aa;
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            border: 2px solid #b45309;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background: linear-gradient(90deg, #b45309 0%, #dc2626 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 6px 6px 0 0;
+        }
+
+        .card-header h2 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-header p {
+            color: #fef3c7;
+            font-size: 0.9rem;
+        }
+
+        .card-content {
+            padding: 2rem;
+        }
+
+        /* Sections */
+        .section {
+            background-color: #fef3c7;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #b45309;
+            margin-bottom: 1.5rem;
+        }
+
+        .section h3 {
+            color: #92400e;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .section p {
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-right: 2rem;
+        }
+
+        .section li {
+            color: #333;
+            margin-bottom: 0.5rem;
+            padding-right: 1rem;
+        }
+
+        .section li:before {
+            content: "✓ ";
+            color: #b45309;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Expandable Sections */
+        .expandable {
+            border: 2px solid #b45309;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .expandable-header {
+            background: linear-gradient(90deg, #b45309 0%, #dc2626 100%);
+            color: white;
+            padding: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        .expandable-header:hover {
+            background: linear-gradient(90deg, #92400e 0%, #b45309 100%);
+        }
+
+        .expandable-header h4 {
+            font-size: 1rem;
+        }
+
+        .expandable-content {
+            display: none;
+            background-color: #fed7aa;
+            padding: 1.5rem;
+        }
+
+        .expandable-content.expanded {
+            display: block;
+        }
+
+        .chevron {
+            transition: transform 0.3s;
+            font-size: 1.25rem;
+        }
+
+        .chevron.rotated {
+            transform: rotate(180deg);
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table thead {
+            background-color: #b45309;
+            color: white;
+        }
+
+        table th {
+            padding: 1rem;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        table td {
+            padding: 1rem;
+            border-bottom: 1px solid #fed7aa;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #fef3c7;
+        }
+
+        table tbody tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        /* Violation Cards */
+        .violation-category {
+            margin-bottom: 2rem;
+        }
+
+        .violation-item {
+            background: white;
+            border-left: 4px solid #b45309;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .violation-item h5 {
+            color: #92400e;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .violation-item .desc {
+            color: #555;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .violation-item .penalty {
+            color: #b45309;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(90deg, #92400e 0%, #b45309 50%, #dc2626 100%);
+            color: white;
+            padding: 3rem 1rem;
+            margin-top: 3rem;
+            border-top: 4px solid #b45309;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            color: #fef3c7;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #b45309;
+            padding-top: 2rem;
+            text-align: center;
+            color: #fef3c7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.75rem;
+            }
+
+            header .subtitle {
+                font-size: 1rem;
+            }
+
+            .tab-buttons {
+                grid-template-columns: 1fr;
+            }
+
+            .card-header h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
-  <div class="wrap" role="main">
+    <!-- Header -->
     <header>
-      <h1>دستور الأمريكي — سنة 1899</h1>
-      <p class="lead">نص دستوري عربي مُنسق يقدّم هيكل الحكم، السلطات، والحقوق الأساسية كما صيغت في هذا المستند الافتراضي لسنة 1899.</p>
+        <h1>مملكة العدل 1899</h1>
+        <p class="subtitle">Kingdom of Justice 1899</p>
+        <p class="tagline">دولة العدل والقانون - حيث يسود النظام والعدالة</p>
     </header>
 
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <button onclick="scrollToSection('home')">الرئيسية</button>
+            <button onclick="switchTab('constitution')">الدستور</button>
+            <button onclick="switchTab('laws')">القوانين</button>
+            <button onclick="switchTab('ministry')">وزارة العدل</button>
+            <button onclick="switchTab('violations')">المخالفات</button>
+            <button onclick="scrollToSection('contact')">التواصل</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
     <main>
-      <div class="meta">
-        <div class="badge">نسخة: 1.0</div>
-        <div class="info">اللغة: العربية · اتجاه الصفحة: يمين → يسار · اللونان: بيج وأحمر</div>
-      </div>
+        <div class="tabs">
+            <!-- Tab Buttons -->
+            <div class="tab-buttons">
+                <button class="tab-button active" onclick="switchTab('constitution')">⚖️ الدستور</button>
+                <button class="tab-button" onclick="switchTab('laws')">📖 القوانين</button>
+                <button class="tab-button" onclick="switchTab('ministry')">🏛️ الوزارة</button>
+                <button class="tab-button" onclick="switchTab('violations')">⚠️ المخالفات</button>
+            </div>
 
-      <div class="actions" aria-hidden="true">
-        <button class="btn" onclick="window.print();">طباعة الصفحة</button>
-        <button class="btn ghost" onclick="copyContent()">نسخ النص الكامل</button>
-      </div>
+            <!-- Constitution Tab -->
+            <div id="constitution" class="tab-content active">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>الدستور والقوانين الأساسية</h2>
+                        <p>المقدمة الدستورية والمبادئ الأساسية</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="section">
+                            <h3>المقدمة الدستورية</h3>
+                            <p>نحن شعب مملكة العدل، إيماناً منا بأهمية القانون والنظام، نضع هذا الدستور ليكون الأساس الذي تقوم عليه دولتنا. وقد أسندنا السلطة المطلقة في تطبيق القانون والعدالة إلى وزير العدل، الذي يتمتع بصلاحيات واسعة للإشراف على جميع الوزارات والمؤسسات.</p>
+                        </div>
 
-      <!-- البَدَايَة -->
-      <article class="section" id="preamble">
-        <h2>المُقدِّمة</h2>
-        <p>نحنِ الشعبُ الأمريكي، مدفوعين برغبةٍ مُخلصةٍ في إقامةِ نظامٍ عادلٍ ومستقر، وحمايةِ الحريات الأساسية، وضمانِ سيادة القانون، ونشرِ الرفاه العام، نقرُّ هذا الدستور في سنة 1899 ليكون أساسَ حكمٍ دستوريٍ يمنحُ الشعبَ الحقَّ في الحكمِ عن طريقِ مؤسساتٍ منتخَبةٍ عادلة.</p>
-      </article>
+                        <h3 style="color: #92400e; margin-top: 2rem;">المبادئ الأساسية</h3>
 
-      <!-- الفصل الأول -->
-      <article class="section" id="structure">
-        <h2>الفصل الأول — هيكلُ الدولة</h2>
-        <p>الدولةُ المتحدةُ تُؤلّفُ اتحادًا بين الولايات، يقومُ على فصل السلطات الثلاث: التشريعية، التنفيذية، والقضائية.</p>
+                        <div class="section">
+                            <h3>المادة الأولى: السيادة والقانون</h3>
+                            <p>السيادة في مملكة العدل تستند إلى القانون والعدالة. جميع المواطنين متساوون أمام القانون، وجميع السلطات الحكومية مقيدة بأحكام هذا الدستور والقوانين الصادرة عن وزير العدل.</p>
+                        </div>
 
-        <div class="two-col" role="list">
-          <div role="listitem">
-            <h3 style="margin:0;color:var(--accent);font-size:16px">السلطة التشريعية</h3>
-            <p>مَجلسان: مجلسُ الشيوخِ ومجلسُ النواب. لمهامهما سنُّ القوانين، الموافقة على الميزانية، والرّقابة على السلطة التنفيذية.</p>
-          </div>
-          <div role="listitem">
-            <h3 style="margin:0;color:var(--accent);font-size:16px">السلطة التنفيذية</h3>
-            <p>رئيسُ الدولةِ يمثلُ السلطةَ التنفيذية، مسؤول عن تنفيذ القوانين، السياسة الخارجية، وقيادة القُوّاتِ المسلحة. يُنتخبُ لفترةٍ محددةٍ وفق شروط الدستور.</p>
-          </div>
+                        <div class="section">
+                            <h3>المادة الثانية: وزير العدل والسلطة المطلقة</h3>
+                            <p>يتمتع وزير العدل بالسلطة المطلقة في تطبيق القانون والعدالة. له الحق في:</p>
+                            <ul>
+                                <li>الإشراف على جميع الوزارات والمؤسسات الحكومية</li>
+                                <li>إصدار القوانين والتشريعات الجديدة</li>
+                                <li>تعديل أو إلغاء أي قانون قائم</li>
+                                <li>تعيين وعزل الموظفين الحكوميين</li>
+                                <li>الفصل في جميع النزاعات والقضايا القانونية</li>
+                                <li>فرض العقوبات والغرامات</li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h3>المادة الثالثة: حقوق المواطنين</h3>
+                            <p>لكل مواطن الحق في:</p>
+                            <ul>
+                                <li>محاكمة عادلة أمام محاكم وزير العدل</li>
+                                <li>الحماية من الظلم والتعسف</li>
+                                <li>المساواة أمام القانون</li>
+                                <li>الحصول على المعلومات القانونية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Laws Tab -->
+            <div id="laws" class="tab-content">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>القوانين والتشريعات</h2>
+                        <p>القوانين الرئيسية المعمول بها في المملكة</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="expandable">
+                            <div class="expandable-header" onclick="toggleExpand(this)">
+                                <h4>القانون الأول: قانون النظام العام</h4>
+                                <span class="chevron">▼</span>
+                            </div>
+                            <div class="expandable-content">
+                                <h4 style="color: #92400e; margin-bottom: 1rem;">الفصل الأول: الالتزامات الأساسية</h4>
+                                <ul style="list-style: none; padding-right: 1rem;">
+                                    <li style="margin-bottom: 0.5rem;">• المادة 1: يجب على جميع المواطنين احترام القانون والنظام العام.</li>
+                                    <li style="margin-bottom: 0.5rem;">• المادة 2: يجب على جميع الموظفين الحكوميين الامتثال لأوامر وزير العدل.</li>
+                                    <li style="margin-bottom: 0.5rem;">• المادة 3: يحظر على أي شخص مخالفة الأوامر الصادرة من وزير العدل أو ممثليه.</li>
+                                </ul>
+                                <h4 style="color: #92400e; margin-top: 1.5rem; margin-bottom: 1rem;">الفصل الثاني: حماية النظام</h4>
+                                <ul style="list-style: none; padding-right: 1rem;">
+                                    <li style="margin-bottom: 0.5rem;">• المادة 4: يجب على الشرطة والأمن الحفاظ على النظام العام في جميع الأوقات.</li>
+                                    <li style="margin-bottom: 0.5rem;">• المادة 5: يحظر تجمع أكثر من 5 أشخاص دون إذن من وزير العدل.</li>
+                                    <li style="margin-bottom: 0.5rem;">• المادة 6: يحظر نشر أي معلومات تتعارض مع القوانين دون موافقة وزير العدل.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="expandable">
+                            <div class="expandable-header" onclick="toggleExpand(this)">
+                                <h4>القانون الثاني: قانون الملكية والعقود</h4>
+                                <span class="chevron">▼</span>
+                            </div>
+                            <div class="expandable-content">
+                                <h4 style="color: #92400e; margin-bottom: 1rem;">الفصل الأول: حقوق الملكية</h4>
+                                <ul style="list-style: none; padding-right: 1rem;">
+                                    <li style="margin-bottom: 0.5rem;">• المادة 1: الملكية الخاصة محمية بموجب القانون.</li>
+                                    <li style="margin-bottom: 0.5rem;">• المادة 2: يجب تسجيل جميع الممتلكات لدى وزارة العدل.</li>
+                                    <li style="margin-bottom: 0.5rem;">• المادة 3: يحق لوزير العدل مصادرة أي ملكية إذا كانت تستخدم لمخالفة القانون.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="expandable">
+                            <div class="expandable-header" onclick="toggleExpand(this)">
+                                <h4>القانون الثالث: قانون العمل والموظفين</h4>
+                                <span class="chevron">▼</span>
+                            </div>
+                            <div class="expandable-content">
+                                <h4 style="color: #92400e; margin-bottom: 1rem;">الفصل الأول: حقوق وواجبات الموظفين</h4>
+                                <ul style="list-style: none; padding-right: 1rem;">
+                                    <li style="margin-bottom: 0.5rem;">• المادة 1: جميع الموظفين الحكوميين يعملون تحت إشراف وزير العدل.</li>
+                                    <li style="margin-bottom: 0.5rem;">• المادة 2: يجب على الموظفين الامتثال لجميع الأوامر الصادرة من وزير العدل.</li>
+                                    <li style="margin-bottom: 0.5rem;">• المادة 3: يحق لوزير العدل عزل أي موظف دون الحاجة لتبرير القرار.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ministry Tab -->
+            <div id="ministry" class="tab-content">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>وزارة العدل والهيكل الإداري</h2>
+                        <p>الهيكل التنظيمي والسلطات المطلقة</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="section">
+                            <h3>رؤية وزارة العدل</h3>
+                            <p>وزارة العدل هي القلب النابض لمملكة العدل، وهي المسؤولة عن تطبيق القانون والعدالة في جميع أنحاء الدولة. تحت قيادة وزير العدل، تعمل الوزارة على ضمان سيادة القانون والنظام.</p>
+                        </div>
+
+                        <h3 style="color: #92400e; margin-top: 2rem; margin-bottom: 1rem;">الأقسام الرئيسية</h3>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                            <div class="section" style="background-color: #fed7aa;">
+                                <h4 style="color: #92400e; margin-bottom: 0.75rem;">📋 قسم التشريعات</h4>
+                                <ul>
+                                    <li>صياغة القوانين الجديدة</li>
+                                    <li>تعديل القوانين القائمة</li>
+                                    <li>نشر النصوص القانونية</li>
+                                </ul>
+                            </div>
+
+                            <div class="section" style="background-color: #fed7aa;">
+                                <h4 style="color: #92400e; margin-bottom: 0.75rem;">⚖️ قسم المحاكم</h4>
+                                <ul>
+                                    <li>إدارة المحاكم</li>
+                                    <li>تعيين القضاة</li>
+                                    <li>الفصل في القضايا</li>
+                                </ul>
+                            </div>
+
+                            <div class="section" style="background-color: #fed7aa;">
+                                <h4 style="color: #92400e; margin-bottom: 0.75rem;">👮 قسم الشرطة</h4>
+                                <ul>
+                                    <li>تطبيق القانون</li>
+                                    <li>القبض على المجرمين</li>
+                                    <li>التحقيق في الجرائم</li>
+                                </ul>
+                            </div>
+
+                            <div class="section" style="background-color: #fed7aa;">
+                                <h4 style="color: #92400e; margin-bottom: 0.75rem;">🔐 قسم السجون</h4>
+                                <ul>
+                                    <li>إدارة السجون</li>
+                                    <li>تنفيذ الأحكام</li>
+                                    <li>إعادة التأهيل</li>
+                                </ul>
+                            </div>
+
+                            <div class="section" style="background-color: #fed7aa;">
+                                <h4 style="color: #92400e; margin-bottom: 0.75rem;">🏢 قسم الإشراف</h4>
+                                <ul>
+                                    <li>الإشراف على الوزارات</li>
+                                    <li>ضمان الامتثال</li>
+                                    <li>التحقيق في الفساد</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3 style="color: #92400e; margin-top: 2rem; margin-bottom: 1rem;">سلطات وزير العدل على الوزارات</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>الوزارة</th>
+                                    <th>صلاحيات وزير العدل</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>وزارة الداخلية</td>
+                                    <td>الإشراف على الأمن والنظام والشرطة</td>
+                                </tr>
+                                <tr>
+                                    <td>وزارة المالية</td>
+                                    <td>مراقبة الإنفاق والتحقق من الامتثال</td>
+                                </tr>
+                                <tr>
+                                    <td>وزارة الصحة</td>
+                                    <td>ضمان الالتزام بالقوانين الصحية</td>
+                                </tr>
+                                <tr>
+                                    <td>وزارة التعليم</td>
+                                    <td>الإشراف على المناهج والقوانين التعليمية</td>
+                                </tr>
+                                <tr>
+                                    <td>وزارة الأشغال العامة</td>
+                                    <td>التحقق من الامتثال للقوانين البيئية</td>
+                                </tr>
+                                <tr>
+                                    <td>وزارة التجارة</td>
+                                    <td>مراقبة الأنشطة التجارية</td>
+                                </tr>
+                                <tr>
+                                    <td>وزارة الدفاع</td>
+                                    <td>الإشراف على الامتثال للقوانين العسكرية</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Violations Tab -->
+            <div id="violations" class="tab-content">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>المخالفات والعقوبات</h2>
+                        <p>تصنيفات المخالفات والعقوبات المقررة</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="violation-category">
+                            <h3 style="color: #dc2626; margin-bottom: 1rem;">المخالفات من الدرجة الأولى (الخطيرة جداً)</h3>
+                            <div class="violation-item">
+                                <h5>الخيانة والتمرد</h5>
+                                <div class="desc">محاولة الإطاحة بحكم وزير العدل</div>
+                                <div class="penalty">العقوبة: السجن مدى الحياة أو الإعدام</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>تزييف القوانين</h5>
+                                <div class="desc">تزييف الوثائق القانونية</div>
+                                <div class="penalty">العقوبة: السجن 20 سنة + غرامة 100,000 دولار</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>الفساد الحكومي</h5>
+                                <div class="desc">قبول رشوة أو اختلاس أموال عامة</div>
+                                <div class="penalty">العقوبة: السجن 15 سنة + مصادرة الأموال</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>التجمع غير المشروع</h5>
+                                <div class="desc">تجمع أكثر من 5 أشخاص بدون إذن</div>
+                                <div class="penalty">العقوبة: السجن 5 سنوات + غرامة 50,000 دولار</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>نشر معلومات محظورة</h5>
+                                <div class="desc">نشر معلومات تتعارض مع القوانين</div>
+                                <div class="penalty">العقوبة: السجن 10 سنوات + غرامة 75,000 دولار</div>
+                            </div>
+                        </div>
+
+                        <div class="violation-category">
+                            <h3 style="color: #b45309; margin-bottom: 1rem;">المخالفات من الدرجة الثانية (الجسيمة)</h3>
+                            <div class="violation-item">
+                                <h5>عدم احترام أوامر وزير العدل</h5>
+                                <div class="desc">رفض تنفيذ أمر من وزير العدل</div>
+                                <div class="penalty">العقوبة: السجن 3 سنوات + غرامة 30,000 دولار</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>الاعتداء على موظف حكومي</h5>
+                                <div class="desc">الاعتداء البدني على موظف</div>
+                                <div class="penalty">العقوبة: السجن سنتان + غرامة 20,000 دولار</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>الاحتيال والخداع</h5>
+                                <div class="desc">الاحتيال في المعاملات</div>
+                                <div class="penalty">العقوبة: السجن سنتان + غرامة 25,000 دولار</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>عدم الامتثال للقوانين</h5>
+                                <div class="desc">مخالفة القوانين بشكل متكرر</div>
+                                <div class="penalty">العقوبة: السجن سنة + غرامة 15,000 دولار</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>الإهمال الوظيفي</h5>
+                                <div class="desc">إهمال الموظف لواجباته</div>
+                                <div class="penalty">العقوبة: السجن 6 أشهر + غرامة 10,000 دولار</div>
+                            </div>
+                        </div>
+
+                        <div class="violation-category">
+                            <h3 style="color: #92400e; margin-bottom: 1rem;">المخالفات من الدرجة الثالثة (البسيطة)</h3>
+                            <div class="violation-item">
+                                <h5>الغياب عن العمل</h5>
+                                <div class="desc">الغياب بدون عذر</div>
+                                <div class="penalty">العقوبة: غرامة 5,000 دولار</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>عدم الالتزام بالزي الموحد</h5>
+                                <div class="desc">عدم ارتداء الزي الرسمي</div>
+                                <div class="penalty">العقوبة: غرامة 2,000 دولار</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>عدم تسجيل الملكية</h5>
+                                <div class="desc">عدم تسجيل الممتلكات</div>
+                                <div class="penalty">العقوبة: غرامة 3,000 دولار</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>الإزعاج العام</h5>
+                                <div class="desc">إزعاج الآخرين في الأماكن العامة</div>
+                                <div class="penalty">العقوبة: غرامة 1,000 دولار</div>
+                            </div>
+                            <div class="violation-item">
+                                <h5>عدم الالتزام بساعات العمل</h5>
+                                <div class="desc">الحضور المتأخر</div>
+                                <div class="penalty">العقوبة: غرامة 500 دولار</div>
+                            </div>
+                        </div>
+
+                        <div class="section" style="background-color: #fce7f3; border-left-color: #be185d;">
+                            <h3 style="color: #be185d;">إجراءات تطبيق العقوبات</h3>
+                            <ol style="padding-right: 2rem;">
+                                <li style="margin-bottom: 1rem;"><strong>التحقيق:</strong> يتم التحقيق في المخالفة من قبل قسم التحقيقات بوزارة العدل.</li>
+                                <li style="margin-bottom: 1rem;"><strong>المحاكمة:</strong> يتم محاكمة المتهم أمام محكمة وزير العدل.</li>
+                                <li style="margin-bottom: 1rem;"><strong>الحكم:</strong> يصدر الحكم من قبل القاضي المعين من قبل وزير العدل.</li>
+                                <li style="margin-bottom: 1rem;"><strong>التنفيذ:</strong> يتم تنفيذ الحكم من قبل قسم السجون والعقوبات.</li>
+                                <li><strong>الاستئناف:</strong> يمكن الاستئناف أمام وزير العدل نفسه، الذي له الحق في تعديل أو إلغاء الحكم.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </article>
-
-      <!-- الفصل الثاني -->
-      <article class="section" id="rights">
-        <h2>الفصل الثاني — الحقوقُ والحُرياتُ الأساسية</h2>
-        <p>يضمن هذا الدستور الحقوقَ التاليةَ لكافة المواطنين بلا تمييز:</p>
-        <dl>
-          <dt>حريةُ التعبير</dt>
-          <dd>تكفل حريةَ الرأيِ والنشرِ والتجمعِ السلميِّ ما لم تُخلَّ بالأمن العام.</dd>
-
-          <dt>حُقوقُ المتهمين</dt>
-          <dd>العدالةُ الجنائيةُ تقتضي محاكمةً عادلة، حقَّ الدفاع، وحظرَ التعذيبِ والمعاملةِ القاسية.</dd>
-
-          <dt>المساواة أمام القانون</dt>
-          <dd>المواطنون جميعاً سواسيةٌ في الحقوق والواجبات دون تمييز.</dd>
-        </dl>
-      </article>
-
-      <!-- الفصل الثالث -->
-      <article class="section" id="judiciary">
-        <h2>الفصل الثالث — النظامُ القضائي</h2>
-        <p>القضاءُ مستقلٌّ؛ للمحكمة العليا الكلمةُ الفصل في تفسيرِ الدستور وحلِّ المنازعات بين الولايات أو بين الدولة والولايات.</p>
-      </article>
-
-      <!-- أحكام انتقالية -->
-      <article class="section" id="transitional">
-        <h2>أحكامٌ انتقالية وتطبيقية</h2>
-        <p>تدخلُ أحكامُ هذا الدستور حيِّز التنفيذ فورَ نشرِه، ويُولَّى وضعُ قوانينٍ تفصيليةٍ لتنفيذِ بنوده خلالِ عامٍ واحدٍ من تاريخِ اعتماده.</p>
-      </article>
-
-      <!-- خاتمة وتواقيع -->
-      <article class="section" id="closing">
-        <h2>الخاتمة والتواقيع</h2>
-        <p>تم انشاء هذا الدستور من قبل معالي الزوير انتوني شلبي و يجب التزام بلقوانين و البنود اعلا</p>
-        <div style="margin-top:12px;">
-          <p style="margin:0 0 6px 0"><span style="font-weight:700;color:var(--accent)">المرسِمون:</span></p>
-          <p style="margin:0;color:var(--muted)">معالي الوزير / ANTHONY SHLBY - انتوني شلبي
-        </div>
-      </article>
-
     </main>
 
-    <footer>
-      <div class="sig">سنة 1899 · دستور دوله ريك لايف</div>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>وزارة العدل</h4>
+                <p>مملكة العدل 1899</p>
+                <p>مملكه ريك لايف</p>
+            </div>
+            <div class="footer-section">
+                <h4>معلومات التواصل</h4>
+                <p>الهاتف:0544291131</p>
+                <p>البريد:fahadalalkami7@gmail.com</p>
+                <p>تم انشاء الصفحه من قبل fahad_lev - f780</p>
+            </div>
+            <div class="footer-section">
+                <h4>الموقع</h4>
+                <p>قصر البيرثويت </p>
+                <p>مجكمه العدل</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 1899 - جميع الحقوق محفوظة  f78o - fahad_lev</p>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">تحت إشراف وزير العدل انتوني شلبي والسلطة المطلقة</p>
+        </div>
     </footer>
-  </div>
 
-  <script>
-    function copyContent(){
-      const bodyText = document.documentElement.outerHTML;
-      if(navigator.clipboard && navigator.clipboard.writeText){
-        navigator.clipboard.writeText(bodyText).then(()=> {
-          alert('تم نسخ مصدر الصفحة بالكامل. يمكنك لصقه في ملف وحفظه كـ .html');
-        }, ()=> {
-          fallbackCopy(bodyText);
-        });
-      } else {
-        fallbackCopy(bodyText);
-      }
-    }
-    function fallbackCopy(text){
-      const ta = document.createElement('textarea');
-      ta.value = text;
-      document.body.appendChild(ta);
-      ta.select();
-      try { document.execCommand('copy'); alert('تم نسخ مصدر الصفحة.'); } catch(e){ alert('لم يتم النسخ تلقائياً، انسخ يدوياً.'); }
-      ta.remove();
-    }
-  </script>
+    <script>
+        function switchTab(tabName) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
 
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Show selected tab
+            const selectedTab = document.getElementById(tabName);
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        function toggleExpand(header) {
+            const content = header.nextElementSibling;
+            const chevron = header.querySelector('.chevron');
+            
+            content.classList.toggle('expanded');
+            chevron.classList.toggle('rotated');
+        }
+
+        function scrollToSection(sectionId) {
+            if (sectionId === 'home') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else if (sectionId === 'contact') {
+                const footer = document.getElementById('contact');
+                footer.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 </html>
+
